@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51D86690-DD78-4E0F-AE90-87C7200B3127}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>test2</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\dlib-19.4;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files\dlib-19.4\dlib\all;C:\Program Files\dlib-19.4;C:\Program Files\dlib-19.4\dlib\external;C:\Program Files\dlib-19.4\dlib\external\libjpeg;C:\Program Files\dlib-19.4\dlib\external\libpng;C:\Program Files\dlib-19.4\dlib\external\zlib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\dlib-19.4;C:\Program Files\dlib-19.4\dlib\external;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files\dlib-19.4\dlib\all;C:\Program Files\dlib-19.4;C:\Program Files\dlib-19.4\dlib\external;C:\Program Files\dlib-19.4\dlib\external\libjpeg;C:\Program Files\dlib-19.4\dlib\external\libpng;C:\Program Files\dlib-19.4\dlib\external\zlib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files\dlib-19.4;C:\Program Files\dlib-19.4\dlib\external;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files\opencv\build\include;D:\Master ES TU Delft 2016\Elective Course\Computer Vision\Project\opencv_bytefish\opencv-master\lbp;D:\Master ES TU Delft 2016\Elective Course\Computer Vision\Project\test2\test2\test2\boost_1_64_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\opencv\build\x64\vc14\lib;D:\Master ES TU Delft 2016\Elective Course\Computer Vision\Project\test2\test2\test2\boost_1_64_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d2413d.lib;opencv_contrib2413d.lib;opencv_core2413d.lib;opencv_features2d2413d.lib;opencv_flann2413d.lib;opencv_gpu2413d.lib;opencv_highgui2413d.lib;opencv_imgproc2413d.lib;opencv_legacy2413d.lib;opencv_ml2413d.lib;opencv_nonfree2413d.lib;opencv_objdetect2413d.lib;opencv_ocl2413d.lib;opencv_photo2413d.lib;opencv_stitching2413d.lib;opencv_superres2413d.lib;opencv_ts2413d.lib;opencv_video2413d.lib;opencv_videostab2413d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;DLIB_JPEG_SUPPORT;DLIB_PNG_SUPPORT;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Program Files\opencv\build\include;D:\Master ES TU Delft 2016\Elective Course\Computer Vision\Project\opencv_bytefish\opencv-master\lbp;D:\Master ES TU Delft 2016\Elective Course\Computer Vision\Project\test2\test2\test2\boost_1_64_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Program Files\opencv\build\x64\vc14\lib;D:\Master ES TU Delft 2016\Elective Course\Computer Vision\Project\test2\test2\test2\boost_1_64_0\stage\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_calib3d2413.lib;opencv_contrib2413.lib;opencv_core2413.lib;opencv_features2d2413.lib;opencv_flann2413.lib;opencv_gpu2413.lib;opencv_highgui2413.lib;opencv_imgproc2413.lib;opencv_legacy2413.lib;opencv_ml2413.lib;opencv_nonfree2413.lib;opencv_objdetect2413.lib;opencv_ocl2413.lib;opencv_photo2413.lib;opencv_stitching2413.lib;opencv_superres2413.lib;opencv_ts2413.lib;opencv_video2413.lib;opencv_videostab2413.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jchuff.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jconfig.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdct.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdhuff.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jerror.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jinclude.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jmemsys.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jmorecfg.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jpegint.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jpeglib.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jversion.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\png.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngconf.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngdebug.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pnginfo.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pnglibconf.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngpriv.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngstruct.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\crc32.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\deflate.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\gzguts.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inffast.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inffixed.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inflate.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inftrees.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\trees.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\zconf.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\zlib.h" />
+    <ClInclude Include="C:\Program Files\dlib-19.4\dlib\external\zlib\zutil.h" />
+    <ClInclude Include="histogram.hpp" />
+    <ClInclude Include="lbp.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\all\source.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcapimin.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcapistd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jccoefct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jccolor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcdctmgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jchuff.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcinit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcmainct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcmarker.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcmaster.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcomapi.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcparam.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcphuff.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcprepct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jcsample.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdapimin.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdapistd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdatadst.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdatasrc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdcoefct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdcolor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jddctmgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdhuff.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdinput.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdmainct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdmarker.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdmaster.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdmerge.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdphuff.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdpostct.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jdsample.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jfdctflt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jfdctfst.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jfdctint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jidctflt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jidctfst.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jidctint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jidctred.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jmemmgr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jmemnobs.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jquant1.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jquant2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\jutils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\png.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngerror.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngget.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngmem.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngpread.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngread.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngrio.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngrtran.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngrutil.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngset.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngtrans.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngwio.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngwrite.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngwtran.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\libpng\pngwutil.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\adler32.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\compress.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\crc32.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\deflate.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\gzclose.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\gzlib.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\gzread.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\gzwrite.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\infback.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inffast.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inflate.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\inftrees.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\trees.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\uncompr.c" />
+    <ClCompile Include="C:\Program Files\dlib-19.4\dlib\external\zlib\zutil.c" />
+    <ClCompile Include="histogram.cpp" />
+    <ClCompile Include="lbp.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="test2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Program Files\dlib-19.4\dlib\external\libjpeg\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

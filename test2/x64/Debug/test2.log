@@ -1,0 +1,17 @@
+﻿  test2.cpp
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\test2.cpp(8): fatal error C1083: Cannot open include file: 'boost/system/config.hpp': No such file or directory
+  lbp.cpp
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(35): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(119): note: see reference to function template instantiation 'void lbp::ELBP_<char>(const cv::Mat &,cv::Mat &,int,int)' being compiled
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(36): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(53): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(71): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(131): note: see reference to function template instantiation 'void lbp::VARLBP_<char>(const cv::Mat &,cv::Mat &,int,int)' being compiled
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(72): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(91): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(99): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\lbp.cpp(89): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  histogram.cpp
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\histogram.cpp(43): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+d:\master es tu delft 2016\elective course\computer vision\project\test2\test2\test2\histogram.cpp(72): warning C4715: 'lbp::chi_square': not all control paths return a value
